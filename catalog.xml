@@ -1,0 +1,50 @@
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+<catalog>
+    <llista_actors>
+        <actor id="a1">
+            <nom>Jordi</nom>
+            <edat>43</edat>
+        </actor>    
+         <actor id="a2">
+            <nom>Juan</nom>
+        </actor>
+        <actor id="a3">
+            <nom>Tompson</nom>
+            <edat>29</edat>
+        </actor>
+    </llista_actors>
+
+    <llista_pelicules>
+        <pelicula id="p1">
+            <titol idioma="en">Movie One</titol>
+            <director>Director A</director>
+            <any>2020</any>
+            <actors>
+                <actor_ref ref="a1"/>
+                <actor_ref ref="a2"/>
+            </actors>
+        </pelicula>
+        <pelicula id="p2">
+            <titol idioma="es">Película Dos</titol>
+            <director>Director B</director>
+            <any>2019</any>
+            <actors>
+                <actor_ref ref="a2"/>
+                <actor_ref ref="a3"/>
+            </actors>
+        </pelicula>
+        <pelicula id="p3">
+            <titol idioma="fr">Film Trois</titol>
+            <director>Director C</director>
+            <any>2021</any>
+            <actors>
+                <actor_ref ref="a1"/>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+
+    <llista_recomanacions_pelicules>
+        <recomanacio ref="p1"/>
+        <recomanacio ref="p2"/>
+    </llista_recomanacions_pelicules>
+</catalog>
